@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <title>Crypto Marketplace | BriX.</title>
+</head>
+
+<body>
+
+  <div class="overlay">
+    <button id="closeMenu"><i class="ri-close-circle-line"></i></button>
+
+    <div class="nav-links">
+      <a href="/index.html" class="active">Home</a>
+      <a href="/pages/charts.html">Gráficos</a>
+      <a href="/pages/search.html">Pesquisar</a>
+      <a href="/pages/about.html">Sobre mim</a>
+    </div>
+
+    <div class="social-icons">
+      <a href="https://www.youtube.com/@BricioDev"><i class="ri-youtube-line" target="_blank"></i></a>
+      <a href="https://instagram.com/briciodev"><i class="ri-instagram-line" target="_blank"></i></a>
+      <a href="https://github.com/bricio29"><i class="ri-github-line" target="_blank"></i></a>
+      <a href="https://www.linkedin.com/in/briciodev" target="_blank"><i class="ri-linkedin-line"></i></a>
+      <a href="https://www.tiktok.com/@briciodev"><i class="ri-tiktok-line" target="_blank"></i></a>
+    </div>
+
+  </div>
+
+  <div class="main">
+
+    <div class="global">
+      <p>Moedas: <b id="coins-count">N/A</b></p>
+      <p>Trocas: <b id="exchanges-count">N/A</b></p>
+      <p>Capitalização de mercado: <span><b id="marketCap">N/A</b> <span id="marketCapChange">N/A <i class="ri-arrow-down-s-fill"></i></span></span></p>
+      <p>Volume 24H: <b id="volume">N/A</b></p>
+      <p>Domínio: <b id="dominance">BTC N/A% - ETH N/A%</b></p>
+    </div>
+
+    <nav>
+      <div class="left-section">
+        <button id="openMenu"><i class="ri-menu-line"></i></button>
+        <a href="#" class="logo">BriX.</a>
+        <div class="nav-links">
+          <a href="/index.html">Home</a>
+          <a href="/pages/charts.html">Gráficos</a>
+          <a href="/pages/search.html" class="active">Pesquisar</a>
+          <a href="/pages/about.html">Sobre mim</a>
+        </div>
+      </div>
+      <div class="right-section">
+        <form class="search" id="searchForm">
+          <i class="ri-search-line"></i>
+          <input type="text" id="searchInput" placeholder="Pesquisar um ativo..." required autocomplete="off">
+        </form>
+        <i id="theme-toggle" class="ri-sun-line"></i>
+      </div>
+    </nav>
+
+    <h3 id="searchHeading">Resultados da pesquisa para "bit"</h3>
+    <div class="search-container">
+      <div class="item">
+        <h4>Resultados de Ativos</h4>
+        <div id="coins-list"></div>
+        <div class="spinner" id="coins-list-spinner"></div>
+        <div class="error-message" id="coins-list-error">Limite da API atingido. Tente novamente mais tarde.</div>
+      </div>
+
+      <div class="item">
+        <h4>Exchange Results</h4>
+        <div id="exchanges-list"></div>
+        <div class="spinner" id="exchanges-list-spinner"></div>
+        <div class="error-message" id="exchanges-list-error">Limite da API atingido. Tente novamente mais tarde.</div>
+      </div>
+
+      <div class="item">
+        <h4>NFT Results</h4>
+        <div id="nfts-list"></div>
+        <div class="spinner" id="nfts-list-spinner"></div>
+        <div class="error-message" id="nfts-list-error">Limite da API atingido. Tente novamente mais tarde.</div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <footer>
+    <p>© 2025 BricioDev™. Todos os direitos reservados.</p>
+    <div class="social-icons">
+      <a href="https://www.youtube.com/@BricioDev" target="_blank"><i class="ri-youtube-line"></i></a>
+      <a href="https://instagram.com/briciodev" target="_blank"><i class="ri-instagram-line"></i></a>
+      <a href="https://github.com/bricio29" target="_blank"><i class="ri-github-line"></i></a>
+      <a href="https://www.linkedin.com/in/briciodev" target="_blank"><i class="ri-linkedin-line"></i></a>
+      <a href="https://www.tiktok.com/@briciodev" target="_blank"><i class="ri-tiktok-line"></i></a>
+    </div>
+  </footer>
+
+  <button onclick="scrollToTop()" id="scrollTop"><i class="ri-arrow-up-s-line"></i></button>
+
+
+  <script src="../assets/js/global.js"></script>
+  <script src="../assets/js/search.js"></script>
+</body>
+
+</html>

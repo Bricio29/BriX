@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <title>Crypto Marketplace | BriX.</title>
+</head>
+
+<body>
+
+  <div class="overlay">
+    <button id="closeMenu"><i class="ri-close-circle-line"></i></button>
+
+    <div class="nav-links">
+      <a href="/index.html">Home</a>
+      <a href="/pages/charts.html">Gráficos</a>
+      <a href="/pages/search.html">Pesquisar</a>
+      <a href="/pages/about.html" class="active">Sobre mim</a>
+    </div>
+
+    <div class="social-icons">
+      <a href="https://www.youtube.com/@BricioDev"><i class="ri-youtube-line" target="_blank"></i></a>
+      <a href="https://instagram.com/briciodev"><i class="ri-instagram-line" target="_blank"></i></a>
+      <a href="https://github.com/bricio29"><i class="ri-github-line" target="_blank"></i></a>
+      <a href="https://www.linkedin.com/in/briciodev" target="_blank"><i class="ri-linkedin-line"></i></a>
+      <a href="https://www.tiktok.com/@briciodev"><i class="ri-tiktok-line" target="_blank"></i></a>
+    </div>
+
+  </div>
+
+  <div class="main">
+
+    <div class="global">
+      <p>Moedas: <b id="coins-count">N/A</b></p>
+      <p>Trocas: <b id="exchanges-count">N/A</b></p>
+      <p>Capitalização de mercado: <span><b id="marketCap">N/A</b> <span id="marketCapChange">N/A <i class="ri-arrow-down-s-fill"></i></span></span></p>
+      <p>Volume 24H: <b id="volume">N/A</b></p>
+      <p>Domínio: <b id="dominance">BTC N/A% - ETH N/A%</b></p>
+    </div>
+
+    <nav>
+      <div class="left-section">
+        <button id="openMenu"><i class="ri-menu-line"></i></button>
+        <a href="#" class="logo">BriX.</a>
+        <div class="nav-links">
+          <a href="/index.html">Home</a>
+          <a href="/pages/charts.html">Gráficos</a>
+          <a href="/pages/search.html">Pesquisar</a>
+          <a href="/pages/about.html" class="active">Sobre mim</a>
+        </div>
+      </div>
+      <div class="right-section">
+        <form class="search" id="searchForm">
+          <i class="ri-search-line"></i>
+          <input type="text" id="searchInput" placeholder="Pesquisar um ativo..." required autocomplete="off">
+        </form>
+        <i id="theme-toggle" class="ri-sun-line"></i>
+      </div>
+    </nav>
+
+    <div class="about-container">
+      <div class="info">
+        <h3>Quem é BricioDev?</h3>
+        <p>
+          Estudante de Sistemas de Informação, apaixonado por desenvolvimento de software e design de sites. Tem como objetivo criar soluções digitais inovadoras e eficientes, sempre com foco na experiência do usuário e na entrega de resultados de qualidade.
+          <br><br>
+          Who's BricioDev?
+          <br><br>
+          Information Systems student, passionate about software development and website design. His goal is to create innovative and efficient digital solutions, always focusing on user experience and delivering quality results.
+        </p>
+        <h2>O que é a BriX?</h2>
+        <p>
+          Bem-vindo à BriX, seu principal destino para transações de criptomoedas seguras e sem complicações.
+          Nossa missão é capacitar indivíduos e instituições, fornecendo uma plataforma que combina
+          inovação, segurança e design intuitivo para atender a todas as suas necessidades em ativos digitais.
+          <br><br>
+          Na BriX, vislumbramos um mundo onde as moedas digitais sejam acessíveis a todos. Buscamos
+          preencher a lacuna entre as finanças tradicionais e o futuro do dinheiro, oferecendo uma plataforma que
+          simplifique a negociação de criptomoedas, garantindo os mais altos padrões de segurança e confiabilidade.
+        </p>
+        <div class="buttons">
+          <button>
+            <a href="https://briciodev.vercel.app/" target="_blank">Saber mais</a>
+          </button>
+          <button>
+            <a href="https://instagram.com/briciodev" target="_blank">Conecte-se</a>
+          </button>
+        </div>
+      </div>
+      <div class="image">
+        <img src="/../assets/images/about.jpg" alt="about">
+      </div>
+    </div>
+
+
+  </div>
+
+  <footer>
+    <p>© 2025 BricioDev™. Todos os direitos reservados.</p>
+    <div class="social-icons">
+      <a href="https://www.youtube.com/@BricioDev" target="_blank"><i class="ri-youtube-line"></i></a>
+      <a href="https://instagram.com/briciodev" target="_blank"><i class="ri-instagram-line"></i></a>
+      <a href="https://github.com/bricio29" target="_blank"><i class="ri-github-line"></i></a>
+      <a href="https://www.linkedin.com/in/briciodev" target="_blank"><i class="ri-linkedin-line"></i></a>
+      <a href="https://www.tiktok.com/@briciodev" target="_blank"><i class="ri-tiktok-line"></i></a>
+    </div>
+  </footer>
+
+  <button onclick="scrollToTop()" id="scrollTop"><i class="ri-arrow-up-s-line"></i></button>
+
+
+  <script src="../assets/js/global.js"></script>
+</body>
+
+</html>
